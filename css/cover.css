@@ -432,4 +432,44 @@ body {
     min-height: calc(100vh - 20px);
   }
 }
+
+.profile-row {
+  padding-bottom: 5em;
+}
+
+.profile .avatar {
+  width: 150px;
+  height: 150xp
+}
+
+.profile .name {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.profile .role {
+  padding-top: .5rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(129, 129, 129);
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.profile .bio {
+  padding-top: .5rem;
+  min-height: 60px;
+  line-height: 1.4;
+  font-size: .75rem;
+  width: 300px;
+  margin: auto;
+}
+
+.profile .link {
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  font-size: 1rem;
+}
 /* CSS Document */
