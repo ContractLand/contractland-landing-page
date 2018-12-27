@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="合约大陆是一个多链生态下的交易公链">
+      <meta name="author" content="合约大陆">
+      <meta name="keywords" content="contractland, 合约大陆, decentralized exchange, 去中心化交易所, cryptocurrency exchange, 虚拟货币交易所, decentralized trading, 去中心化交易, cross chain, 跨链技术, token bridge, 跨链, proof of stake, blockchain, 区块链, cryptocurrency, 虚拟货币">
+
+      <title>合约大陆: 为交易而生的链</title>
+
+      <link rel="stylesheet" type="text/css" href="./dist/fonts/fontawesome-free-5.5.0-web/fonts/all.min.css">
+      <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="./dist/css/slick.css">
+      <link rel="stylesheet" type="text/css" href="./dist/css/contra.min.css">
+      <link rel="icon" href="./dist/img/favicon.ico">
+    </head>
+    <body>
+        <!-- <div class="top-info">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="order-2 order-md-1 col-12 col-md-8 offset-0 offset-md-2 text-center pb-3 pb-md-0">
+                        <p class="italic">Beware of scams! The offical ERC-20 token address of CLC is at 0x0b6bc42cb9b89259a3aa986363fa37a9cbf03b8e.</p>
+                    </div>
+                    <div class="order-1 order-md-2 col-12 col-md-2 text-white text-right d-flex justify-content-end align-items-center">
+                        <a href="#" class="close-info"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="top-menu grey">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand" href="#"><img src="./dist/img/logo.svg" alt="logo"/></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav d-flex justify-content-end align-items-center flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex flex-row justify-content-center align-items-center" target="_blank" href="ContractLand-Whitepaper-2.0-chinese.pdf">
+                                    白皮书
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex flex-row justify-content-center align-items-center" href="index.html">
+                                    English
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <section class="hero grey" style="background-image: url(./dist/img/hero.svg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center text-center">
+                        <h1>The Chain for Trading<br/> Cryptocurrency</h1>
+                        <p>合约大陆是一个多链生态下的交易公链</p>
+                        <div class="text-center buttons">
+                            <a href="https://alpha.contractland.io/" target="_blank" class="btn-violet">
+                                <span><img src="./dist/img/icon-rocket.svg" alt=""/></span>
+                                体验Demo
+                            </a>
+                            <a href="https://t.me/joinchat/GbshrRFAu8gW6Eb0EmzPFA" target="_blank" class="btn-violet">
+                                <span><img src="./dist/img/icon-plane.svg" alt=""/></span>
+                                加入社区
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="scroll-icon"><img src="./dist/img/icon-scroll.svg" alt=""/></span>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 section-title">
+                        <label>技术核心</label>
+                        <h2>高扩容应用链技术架构</h2>
+                        <a href="ContractLand-Whitepaper-2.0-chinese.pdf" target="_blank" class="btn-green">
+                            <span><img src="./dist/img/icon-arrow.svg" alt=""/></span>
+                            技术细节
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <h3>Terra-Chain</h3>
+                        <p>Terra-Chain是专门为多链生态而打造的高性能公链技术。基于新一代区块链技术，在速度，扩容性，费用等方面有大面的优化。</p>
+                        <h3>Terra-Bridge</h3>
+                        <p>Terra-Bridge是双向跨链技术。用于多链生态中链之间的去中心化资产转换。</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="./dist/img/chain-chinese.svg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-3 text-center section-title">
+                        <h2>我们的愿景</h2>
+                        <p>免中间人的交易。通过代码确保公平</p>
+                    </div>
+                    <div class="col-12 col-md-6 img-no-margin icon-holder mt-5">
+                        <img src="./dist/img/ico4.svg" alt="Secure"/>
+                        <h3>资产安全</h3>
+                        <p>钱包对钱包的直接交易。你的资产和私钥只掌握在你自己手里。</p>
+                    </div>
+                    <div class="col-12 col-md-6 img-no-margin icon-holder mt-5">
+                        <img src="./dist/img/ico1.svg" alt="Censhorship-Free"/>
+                        <h3>免注册</h3>
+                        <p>只需要一对地址和私钥便可进行交易，无需繁琐注册。</p>
+                    </div>
+                    <div class="col-12 col-md-6 img-no-margin icon-holder mt-5">
+                        <img src="./dist/img/ico3.svg" alt="Multi-Chain"/>
+                        <h3>多链资产</h3>
+                        <p>通过一个地址便可管理并交易多个链上的代币资产。</p>
+                    </div>
+                    <div class="col-12 col-md-6 img-no-margin icon-holder mt-5">
+                        <img src="./dist/img/ico2.svg" alt="Zero-Fee"/>
+                        <h3>零交易所费用</h3>
+                        <p>真正的去中心化，没有任何交易或者上币费用。唯一的交易消耗是区块链的Gas费用，由交易链的挖矿者获得。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="violet text-white overflow-visible less-padding" style="padding-top: 7.375rem; padding-bottom: 12.375rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h2>Web3.0的资产流动中心</h2>
+                        <p>合约大陆是一个多链生态下的交易公链，让价值真正能够透明、公开、自由的流动。</p>
+                    </div>
+                    <div class="col-12 col-md-7 video-holder">
+                        <div class="video-wrapper d-flex justify-content-center align-items-center">
+                            <div class="video-bg d-flex justify-content-center align-items-center">
+                                <a href="https://www.youtube.com/watch?v=vtxOhZcNxLo" class="btn-video"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2 text-center section-title">
+                        <h2>我们的团队</h2>
+                        <p>合约大陆是一个社区化运营的自治组织，我们的社区开发人员来自于计算机、金融、研究等不同的专业领域，分布于硅谷、纽约、多伦多、杭州、华沙、基辅等全世界不同的城市。我们热衷于去中心化的技术，致力于通过技术手段在无差别的环境下建立信任达成共识。</p>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row justify-content-center align-items-start">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/kirill.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://www.linkedin.com/in/kirill-kirikov-96507425/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <h4>Kirill Kirikov</h4>
+                            <label>区块链研究工程师</label>
+                            <p>4irelabs首席技术官兼联合创始人，区块链专家，软件工程师，旅行者。</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/peter.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://github.com/YumingHe" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h4>Peter He</h4>
+                            <label>区块链研究</label>
+                            <p>共识和跨链协议研发。纽约Bloomberg的高级工程师。多伦多大学的计算机工程。</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/bruce.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://github.com/shakespears88" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h4>Bruce Li</h4>
+                            <label>区块链开发工程师</label>
+                            <p>SmartMesh的前首席运营官和Ipetram的创始人。曾协助麻省理工学院，斯坦福大学，哈佛大学和伦敦商学院的经济学研究。</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/han.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://www.linkedin.com/in/han-ke-9059b286/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <h4>Han Ke</h4>
+                            <label>智能合约工程师</label>
+                            <p>Betterment的前任工程师。 Shoshin区块链安全审计公司的创始人。多伦多大学的计算机工程。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row justify-content-center align-items-start">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/marek.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://www.linkedin.com/in/kirejczyk/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <h4>Marek Kirejczyk</h4>
+                            <label>技术传播者</label>
+                            <p>Ambrosus的区块链开发人员。 Ethworks的创始人。</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/przemyslaw.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://www.linkedin.com/in/mr-government/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <h4>Przemyslaw Rzad</h4>
+                            <label>区块链应用工程师</label>
+                            <p>区块链开发人员。</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/antoni.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://www.linkedin.com/in/akedracki/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <h4>Antoni Kędracki</h4>
+                            <label>技术传播者</label>
+                            <p>Ambrosus的高级区块链开发人员。Ethworks的首席技术官和创始人。</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl  member-holder">
+                        <div class="inner">
+                            <div class="member-image" style="background-image: url(./dist/img/profiles/natalia.jpg);">
+                                <div class="cover d-flex justify-content-center align-items-center text-white">
+                                    <a href="https://www.linkedin.com/in/nkirejczyk/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <h4>Natalia Kirejczyk</h4>
+                            <label>用户体验设计</label>
+                            <p>领衔区块链UI和UX设计师。 Allsporter的UX顾问。 Ethworks的创始人。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-0 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2 text-center section-title">
+                        <h2>发展路线</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fly-by-holder">
+            <div class="cover left">
+                <a href="#" class="custom-slide-prev"><i class="fas fa-angle-left"></i></a>
+            </div>
+            <div class="cover right">
+                <a href="#" class="custom-slide-next"><i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <div class="fly-by">
+                <div>
+                    <div class="item">
+                        <label>Q4 2017</label>
+                        <h4>团队成立</h4>
+                        <p>成立初始团队</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="item">
+                        <label>Q2 2018</label>
+                        <h4>Alpha测试</h4>
+                        <p>交易协议部署以太坊测试网络<br>
+                           打通以太坊和Terra-Chain测试链之间的Terra-Bridge代币跨链转换</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="item">
+                        <label>Q4 2018</label>
+                        <h4>交易链主网</h4>
+                        <p>建立交易链主网<br/>搭建Terra-Bridge打通以太坊主网和交易链主网<br/>交易协议部署到交易链</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fly-by-alt">
+                <div>
+                    <div class="item">
+                        <label>Q1 2018</label>
+                        <h4>平台设计</h4>
+                        <p>白皮书发布<br>
+                        设计平台和交易机制</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="item">
+                        <label>Q3 2018</label>
+                        <h4>Gaia测试链公测</h4>
+                        <p>建立Gaia测试网络<br/>搭建Terra-Bridge打通Rinkeby和Gaia测试网络<br/>交易协议部署到Gaia测试链</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="item">
+                        <label>2019</label>
+                        <h4>搭建多链交易生态</h4>
+                        <p>搭建Terra-Bridge来打通更多公链（BTC, LTC, EOS等）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar d-flex flex-column flex-md-row justify-content-center align-items-center justify-content-md-between">
+                            <a class="navbar-brand" href="#"><img src="./dist/img/logo-footer.svg" alt="logo"/></a>
+                            <ul class="navbar-nav d-flex justify-content-center align-items-end flex-row">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex flex-row justify-content-center align-items-center" href="https://www.youtube.com/channel/UCw_3KgGOsrJct7jWejjzA6g" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex flex-row justify-content-center align-items-center" href="https://www.reddit.com/r/ContractLand/" target="_blank">
+                                        <i class="fab fa-reddit-alien"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex flex-row justify-content-center align-items-center" href="https://twitter.com/ContractLand" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex flex-row justify-content-center align-items-center" href="https://medium.com/contractland" target="_blank">
+                                        <i class="fab fa-medium-m"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex flex-row justify-content-center align-items-center" href="https://t.me/joinchat/GbshrRFAu8gW6Eb0EmzPFA" target="_blank">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex flex-row justify-content-center align-items-center" href="mailto:team@contractland.io" target="_blank">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mt-3 mt-md-0 copy">
+                        <p>Copyright &copy; ContractLand Foundation. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="./dist/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./dist/js/slick.min.js"></script>
+        <script type="text/javascript" src="./dist/js/custom.js"></script>
+
+        <div id="youtubem" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-end align-items-center">
+                        <button type="button" class="btn btn-x" data-dismiss="modal"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="videoWrapper">
+                            <div class="player"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Youtube script-->
+        <script>
+            var rand = Math.floor((Math.random() * 1000) + 1);
+            jQuery('.player').attr('id', 'player' + rand);
+
+            if (document.getElementById('iframe_api') === null) {
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                tag.id = "iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+            } else {
+                runplayer();
+            }
+            var player;
+            var done = false;
+
+            function runplayer() {
+                player = new YT.Player('player' + rand, {
+                    height: '480',
+                    width: '853',
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    },
+                    playerVars: {
+                        controls: 1,
+                        rel: 0
+
+                    }
+                });
+            }
+            function onYouTubeIframeAPIReady() {
+                runplayer();
+            }
+            function onPlayerReady(event) {
+
+            }
+            function starter(video) {
+                player.loadVideoById(video, 0, "large");
+            }
+            function onPlayerStateChange(event) {
+                if (player.getPlayerState() == 1) {
+                    if (player.isMuted() == true) {
+                        player.unMute();
+                    }
+                }
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+
+                }
+                if (event.data === 0) {
+                }
+            }
+            jQuery('.btn-video').click(function (e) {
+                e.preventDefault();
+                var v = jQuery(this).attr('href');
+                if (v == undefined) {
+                    var v = jQuery(this).parent().attr('href');
+                }
+                var videoid = v.split("?v=");
+                starter(videoid[1]);
+                jQuery('#youtubem').modal('show');
+
+            });
+            jQuery('#youtubem.modal.fade.in').click(function () {
+                window.player.stopVideo();
+            });
+            jQuery('#youtubem button,#youtubem').click(function () {
+                window.player.stopVideo();
+            });
+
+        </script>
+
+        <!-- Baidu -->
+        <script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+    </body>
+</html>
