@@ -1,0 +1,13 @@
+{
+  "name": "contractland-landing-page",
+  "version": "1.0.0",
+  "description": "landing page for contractland.io",
+  "author": "Peter He",
+  "homepage": "https://ContractLand.github.io/contractland-landing-page/",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
