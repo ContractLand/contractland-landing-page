@@ -95,7 +95,6 @@ h4 {
   transition: all 0.2s ease-in-out 0s;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
-  z-index: 9999;
   left: 0;
   top: 0;
   padding: 2.1875rem 0;
