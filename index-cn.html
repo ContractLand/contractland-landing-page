@@ -435,6 +435,14 @@
           </div>
         </div>
 
+        <!-- Faucet Modal -->
+        <script>
+            var isOpen = (location.search.split('faucet=')[1] || '').split('&')[0]
+            if (isOpen == 'open') {
+                jQuery('#tokenModal').modal('show')
+            }
+        </script>
+        
         <!--Youtube script-->
         <script>
             var rand = Math.floor((Math.random() * 1000) + 1);
