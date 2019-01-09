@@ -391,7 +391,7 @@
         </div>
 
         <!-- Token Modal -->
-        <div class="modal fade" id="tokenModal" tabindex="-1" role="dialog" aria-labelledby="tokenModalLabel" aria-hidden="true">
+        <div id="tokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="tokenModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header">
@@ -432,6 +432,14 @@
             </div>
           </div>
         </div>
+
+        <!-- Faucet Modal -->
+        <script>
+            var isOpen = (location.search.split('faucet=')[1] || '').split('&')[0]
+            if (isOpen == 'open') {
+                jQuery('#tokenModal').modal('show')
+            }
+        </script>
 
         <!--Youtube script-->
         <script>
