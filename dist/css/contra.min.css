@@ -685,6 +685,20 @@ section.footer .copy p {
     opacity: 1;
     z-index: 3;
 }
+.exchange-list {
+    padding: 0px;
+    margin: 0px auto;
+    list-style: none;
+    font-size: 0px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+.exchange-list li {
+    position: relative;
+    display: inline-block;
+    margin: 0px 40px 50px;
+}
 @media (max-width: 1400px) {
   .fly-by-holder .cover {
     width: 20%;
